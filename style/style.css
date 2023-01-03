@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+body {
+  background-color: #282828;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: #c8c8c8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #c8c8c8;
+}
+
+textarea {
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+}
+
+header {
+  background-color: black;
+}
+
+.user-name {
+  margin-right: auto;
+}
+
+.content,
+.nav {
+  max-width: 90%;
+  margin: auto;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.nav {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+}
+
+.tableView,
+.tableChange {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+}
+
+.tableView span,
+.tableChange span {
+  padding: 5px;
+}
+
+.tableView .tableh,
+.tableView .tabled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tableView .tableh span,
+.tableView .tabled span {
+  border: 1px solid #c8c8c8;
+}
+
+.tableView .tableh span:nth-child(1),
+.tableView .tabled span:nth-child(1) {
+  width: 5%;
+}
+
+.tableView .tableh span:nth-child(2),
+.tableView .tabled span:nth-child(2) {
+  width: 50%;
+}
+
+.tableView .tableh span:nth-child(3),
+.tableView .tabled span:nth-child(3) {
+  width: 25%;
+}
+
+.tableView .tableh span:nth-child(4),
+.tableView .tabled span:nth-child(4) {
+  width: 20%;
+}
+
+.tableChange .tableh,
+.tableChange .tabled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tableChange .tableh span,
+.tableChange .tabled span {
+  border: 1px solid #c8c8c8;
+}
+
+.tableChange .tableh span:nth-child(1),
+.tableChange .tabled span:nth-child(1) {
+  width: 5%;
+}
+
+.tableChange .tableh span:nth-child(2),
+.tableChange .tabled span:nth-child(2) {
+  width: 50%;
+}
+
+.tableChange .tableh span:nth-child(3),
+.tableChange .tabled span:nth-child(3) {
+  width: 25%;
+}
+
+.tableChange .tableh span:nth-child(4),
+.tableChange .tabled span:nth-child(4) {
+  width: 10%;
+}
+
+.tableChange .tableh span:nth-child(4):hover,
+.tableChange .tabled span:nth-child(4):hover {
+  background-color: white;
+  color: black;
+}
+
+.tableChange .tableh span:nth-child(5),
+.tableChange .tabled span:nth-child(5) {
+  width: 10%;
+}
+
+.notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.notes .note {
+  width: 32%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.notes .note p:nth-child(1) {
+  background-color: #4f0505;
+  padding: 10px;
+}
+
+.notes .note p:nth-child(2) {
+  background-color: #871111;
+  padding: 10px;
+}
+
+.notes .note div.note__btn {
+  background-color: #4f0505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notes .note div.note__btn a {
+  padding: 10px;
+}
+
+.notes .note div.note__btn a:hover {
+  background-color: #341329;
+}
+/*# sourceMappingURL=style.css.map */

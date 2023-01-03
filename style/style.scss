@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+body{
+    background-color: rgb(40, 40, 40);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: Montserrat;
+    color: rgb(200, 200, 200);
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
+textarea{
+    background-color: transparent;
+    border: 1px solid rgb(200, 200, 200);
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+
+}
+
+input{
+    background-color: transparent;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 10px
+}
+
+header{
+    background-color: black;
+}
+
+.user-name{
+    margin-right: auto;
+}
+
+.content,
+.nav{
+    max-width: 90%;
+    margin: auto;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px
+}
+
+.tableView,
+.tableChange{
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+
+    & span{
+        padding: 5px;
+    }
+}
+
+.tableView .tableh, 
+.tableView .tabled{
+    display: flex;
+    & span{
+        border: 1px solid rgb(200, 200, 200);
+    }
+    & span:nth-child(1){
+        width: 5%;
+    }
+    & span:nth-child(2){
+        width: 50%;
+    }
+    & span:nth-child(3){
+        width: 25%;
+    }
+    & span:nth-child(4){
+        width: 20%;
+    }
+}
+
+.tableChange .tableh, 
+.tableChange .tabled{
+    display: flex;
+    & span{
+        border: 1px solid rgb(200, 200, 200);
+    }
+    & span:nth-child(1){
+        width: 5%;
+    }
+    & span:nth-child(2){
+        width: 50%;
+    }
+    & span:nth-child(3){
+        width: 25%;
+    }
+    & span:nth-child(4){
+        width: 10%;
+        &:hover{
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+    }
+    & span:nth-child(5){
+        width: 10%;
+    }
+}
+
+.notes{
+
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+
+    .note{
+
+        width: 32%;
+        max-height: 200px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+
+        & p:nth-child(1){
+            background-color: rgb(79, 5, 5);
+            padding: 10px;
+        }
+
+        & p:nth-child(2){
+            background-color: rgb(135, 17, 17);
+            padding: 10px;
+        }
+        & div.note__btn{
+            background-color: rgb(79, 5, 5);
+            display: flex;
+
+            & a{
+                padding: 10px;
+            }
+            
+            & a:hover{
+                background-color: rgb(52, 19, 41);
+            }
+        }
+    }
+}
