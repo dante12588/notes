@@ -26,7 +26,9 @@
         <?php if (!isset($_SESSION['user']))
         echo '<a href="index.php?v=register">Rejestrecja</a>';
         ?>
-        <a href="logout.php">Wyloguj</a>
+        <?php if (isset($_SESSION['user']))
+        echo '<a href="logout.php">Wyloguj</a>';
+        ?>
     </div>
 
 </header>

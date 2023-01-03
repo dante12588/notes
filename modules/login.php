@@ -20,9 +20,9 @@ if( (isset($_POST["f_name"]) and $_POST["f_name"]) and
 }
 
 ?>
-
-<form method="post">
-    <input type="text" name="f_name"><br>
-    <input type="text" name="password">
+<form method="post" class="form login-form">
+    <h1>Zaloguj się</h1>
+    <input type="text" name="f_name" placeholder="Login">
+    <input type="text" name="password" placeholder="Hasło">
     <button>Zaloguj</button>
 </form>

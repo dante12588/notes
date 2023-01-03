@@ -1,7 +1,4 @@
-<h1>Moduł dodawania notatki</h1>
 <?php
-
-dump($_SESSION);
 
 if ( isset($_POST['note']) ){
     $result = $pdo->prepare('INSERT INTO notes (body, id_user) VALUES(:note, :id_user)');
@@ -12,7 +9,9 @@ if ( isset($_POST['note']) ){
 }
 ?>
 
-<form method="post">
-    <input type="text" name="note">
+<h1>Dodaj nową notatkę</h1>
+
+<form method="post" class="add-note">
+    <textarea type="text" name="note" placeholder="Uzupełnij swoją notatkę..."></textarea>
     <button>Dodaj</button>
 </form>

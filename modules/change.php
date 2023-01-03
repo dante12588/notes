@@ -7,7 +7,7 @@ $notes = $result->fetchAll();
 
 ?>
 
-<h1>Moduł Edycji i Usuwania notatki</h1>
+<h1>Edytuj lub</h1>
 
 <div class="edit_notes">
 

@@ -19,8 +19,7 @@ $notes = $result->fetch();
 
 ?>
 
-<form method="post">
+<form method="post" class="add-note">
     <textarea type="text" name="body"><?php echo $notes['body']; ?></textarea>
-    <br>
     <button>Zapisz</button>
 </form>

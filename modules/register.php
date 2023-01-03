@@ -8,17 +8,19 @@ if( (isset($_POST["r_f_name"]) and $_POST["r_f_name"]) and
     (isset($_POST["r_mail"]) and $_POST["r_mail"]) and
     (isset($_POST["r_password"]) and $_POST["r_password"])){
 
+        // Walidacja do poprawy tak samo w logowaniu
+        if (!filter_var($_POST["r_mail"], FILTER_VALIDATE_EMAIL)) {
+            $emailError = "Zły adress email";
+        }
+        
+
     $result = $pdo->prepare('SELECT * FROM users WHERE f_name = :name');
     $result->bindParam(':name', $_POST["r_f_name"]);
     $result->execute();
     $user = $result->fetch();
 
-    if (!filter_var($_POST["r_mail"], FILTER_VALIDATE_EMAIL)) {
-        $emailError = "Zły adress email <br>";
-    }
-
     if( isset($user['f_name'])){
-        $fNameError = "Nazwa uzytkownika zajeta <br>";
+        $fNameError = "Nazwa uzytkownika zajeta";
     }
 
     if( !isset($user['f_name']) and !$emailError ){
@@ -30,18 +32,18 @@ if( (isset($_POST["r_f_name"]) and $_POST["r_f_name"]) and
         $result->execute();
     }
 
-}else{
-    echo "nie podana wszystkich danych";
 }
+
 
 ?>
 
-<form method="post">
-    <input type="text" name="r_f_name"><br>
+<form method="post" class="form register-form">
+    <h1>Zarejestruj się</h1>
+    <input type="text" name="r_f_name" placeholder="Login">
     <?php echo $fNameError ?>
-    <input type="text" name="r_l_name"><br>
-    <input type="text" name="r_mail"><br>
+    <input type="text" name="r_l_name" placeholder="Imię">
+    <input type="text" name="r_mail" placeholder="Adres e-mail">
     <?php echo $emailError ?>
-    <input type="text" name="r_password"><br>
-    <button>Zaloguj</button>
+    <input type="text" name="r_password" placeholder="Hasło">
+    <button>Dodaj uzytkownika</button>
 </form>

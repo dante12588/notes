@@ -7,7 +7,7 @@ $notes = $result->fetchAll();
 
 ?>
 
-<h1>Moduł podglądu</h1>
+<h1>Podgląd</h1>
 
 <div class="notes">
 
